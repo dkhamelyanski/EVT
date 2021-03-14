@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Freet</title>
+        
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="css/font-awesome.css"/>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+    
+	<body>
+        
+        <header>
+            <!-- Навигация -->
+            <nav class="navbar navbar-dark navbar-expand-md mb-4 sticky-top" style="background-color: #333333;">
+
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Логотип сайта"/></a>
+                    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleContainer" aria-controls="navbarsExampleContainer" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarsExampleContainer">
+
+                        <ul class="navbar-nav mr-auto">
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Поиск</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">О нас</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Помощь</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <form class="form-inline">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="Search">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-outline-my my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </li>
+
+                           <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-language"></i></a>
+
+                                <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdown02">
+                                    <a class="dropdown-item" href="#">Русский</a>
+                                    <a class="dropdown-item" href="#">Белорусский</a>
+                                    <a class="dropdown-item disabled" href="#">English</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown04">
+                                    <a class="dropdown-item" href="#">Войти</a>
+                                    <a class="dropdown-item" href="#">Регистрация</a>
+                                    <a class="dropdown-item" href="#">Личный кабинет</a>
+                                    <a class="dropdown-item" href="#">Выйти</a>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </nav><!--/.navbar-->
+        </header>
+        
+        
+        <!-- Container -->
+        <div class="container">
+            <div class="row">
+                <!-- Боковая панель -->
+                <div class="col-xs-12 col-lg-3">
+                   <!-- Вкладки: Категории и фильтры-->
+                    <div class="tabs">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item tab-li"><button class="tab-btn active" role="tab" data-toggle="tab" type="button">Категории</button></li>
+                            <li class="nav-item tab-li"><button class="tab-btn" role="tab" data-toggle="tab" type="button">Фильтры</button></li>
+                        </ul>
+                        
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!-- Tab-1 -->
+                            <div role="tabpanel" class="tab-pane fade in active show" id="tab-1">
+                                <div id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="card">
+                                        <div class="card-my-header" role="tab" id="headingOne">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+												Спортивные секции
+											</a>
+                                        </div>
+										
+                                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+											<div class="card-block">
+												<form method="GET" action="#">
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Футбол</span>
+                                                    </label>    
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Баскетбол</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Карате</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Воллейбол</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Настольный теннис</span>
+                                                    </label>    
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Большой теннис</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Сквош</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Биатлон</span>
+                                                    </label>
+												</form> 
+											</div>
+                                        </div>
+                                    </div>
+                                    
+									<div class="card">
+                                        <div class="card-my-header" role="tab" id="headingTwo">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												Языковые курсы
+											</a>
+                                        </div>
+										
+                                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+											<div class="card-block">
+												<form method="GET" action="#">
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Английский</span>
+                                                    </label>    
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Французкий</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Испанский</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Китайский</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Польский</span>
+                                                    </label>    
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Белорусский</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Немецкий</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Итальянский</span>
+                                                    </label>
+												</form> 
+											</div>
+                                        </div>
+                                    </div>
+									
+                                    <div class="card">
+                                        <div class="card-my-header" role="tab" id="headingThree">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+												Маркетинговые курсы
+											</a>
+                                        </div>
+                                        
+										<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+											<div class="card-block">
+												Тут какие-то фильтры курсов по маркетингу
+											</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card">
+                                        <div class="card-my-header" role="tab" id="headingFour">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+												Мастер классы
+											</a>
+                                        </div>
+                                        
+										<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+											<div class="card-block">
+												<form method="GET" action="#">
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Кофе</span>
+                                                    </label>    
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Росспись посуды</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Лепка из глины</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Кулинария</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Танцы</span>
+                                                    </label>    
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Рисование</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Скульптура</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Декор</span>
+                                                    </label>
+												</form> 
+											</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card">
+                                        <div class="card-my-header" role="tab" id="headingFive">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+												Митапы
+											</a>
+                                        </div>
+                                        
+										<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+											<div class="card-block">
+												Что-то какие-то фильтры про митапы
+											</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card">
+                                        <div class="card-my-header" role="tab" id="headingSix">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+												Программирование
+											</a>
+                                        </div>
+                                        
+										<div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
+											<div class="card-block">
+												<form method="GET" action="#">
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>C++</span>
+                                                    </label>    
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>C#</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>HTML/CSS</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>PHP</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>JS</span>
+                                                    </label>    
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Java</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Python</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Go</span>
+                                                    </label>
+												</form> 
+											</div>
+                                        </div>
+                                    </div>
+									
+									<div class="card">
+                                        <div class="card-my-header" role="tab" id="headingSeven">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+												SEO
+											</a>
+                                        </div>
+                                        
+										<div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
+											<div class="card-block">
+												Какие-то SEO категории
+											</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane fade" id="tab-2">
+                                <div id="accordion2" role="tablist" aria-multiselectable="true">
+                                    <div class="card">
+                                        <div class="card-my-header" role="tab" id="headingOne-2">
+											<a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne-2" aria-expanded="false" aria-controls="collapseOne-2">
+												Город или область
+											</a>
+                                        </div>
+										
+                                        <div id="collapseOne-2" class="collapse" role="tabpanel" aria-labelledby="headingOne-2">
+											<div class="card-block">
+												<form method="GET" action="#">
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Минск</span>
+                                                    </label>    
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Брест</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Витебск</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Гомель</span>
+                                                    </label>
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Гродно</span>
+                                                    </label>    
+                                                    <label>
+												        <input type="checkbox" name="a">
+												        <span>Могилёв</span>
+                                                    </label>
+												</form> 
+											</div>
+                                        </div>
+                                    </div>
+                                    
+									<div class="card">
+                                        <div class="card-my-header" role="tab" id="headingTwo-2">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo-2" aria-expanded="false" aria-controls="collapseTwo-2">
+												Район
+											</a>
+                                        </div>
+										
+                                        <div id="collapseTwo-2" class="collapse" role="tabpanel" aria-labelledby="headingTwo-2">
+											<div class="card-block">
+												Какие-то районы вроде что-то как-то должны быть
+											</div>
+                                        </div>
+                                    </div>
+									
+                                    <div class="card">
+                                        <div class="card-my-header" role="tab" id="headingThree-2">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree-2" aria-expanded="false" aria-controls="collapseThree-2">
+												Улица
+											</a>
+                                        </div>
+                                        
+										<div id="collapseThree-2" class="collapse" role="tabpanel" aria-labelledby="headingThree-2">
+											<div class="card-block">
+												Тут получается разные улицы разных городов
+											</div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div><!-- /tab-2 -->
+                        </div><!-- /tab panes -->
+                    </div><!-- /tabs -->
+                   
+                   <!-- Вкладки: Недавние и популярные -->
+                    <div class="tabs top-space">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item tab-li"><button class="tab-btn active" role="tab" data-toggle="tab" type="button">Недавние</button></li>
+                            <li class="nav-item tab-li"><button class="tab-btn" role="tab" data-toggle="tab" type="button">Популярные</button></li>
+                        </ul>
+                        
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!-- Tab-1 -->
+                            <div role="tabpanel" class="tab-pane fade in active show" id="tab-3">
+                                <div class="media">
+                                    <a href="#">
+                                        <img src="images/news.jpg" height="70px" width="70px" alt="Новость" class="rounded d-flex mr-3"/>  
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="news-title">
+                                            <a href="#">Новость</a>
+                                        </div>
+                                        <div class="news-author">
+                                            <a href="#" class="comment-ind">6 комментариев</a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
+                                <div class="media">
+                                    <a href="#">
+                                        <img src="images/news.jpg" height="70px" width="70px" alt="Новость" class="rounded d-flex mr-3"/>  
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="news-title">
+                                            <a href="#">Старая новость</a>
+                                        </div>
+                                        <div class="news-author">
+                                            <a href="#" class="comment-ind">2 комментариев</a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
+                                <div class="media">
+                                    <a href="#">
+                                        <img src="images/news.jpg" height="70px" width="70px" alt="Новость" class="rounded d-flex mr-3"/>  
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="news-title">
+                                            <a href="#">Интересная новость</a>
+                                        </div>
+                                        <div class="news-author">
+                                            <a href="#" class="comment-ind">14 комментариев</a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
+                                <div class="media">
+                                    <a href="#">
+                                        <img src="images/news.jpg" height="70px" width="70px" alt="Новость" class="rounded d-flex mr-3"/>  
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="news-title">
+                                            <a href="#">Не очень интересная новость</a>
+                                        </div>
+                                        <div class="news-author">
+                                            <a href="#" class="comment-ind">2 комментария</a>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div><!-- /tab-1 -->
+                            
+                            <!-- Tab-2 -->
+                            <div role="tabpanel" class="tab-pane fade" id="tab-4">
+                                <div class="media">
+                                    <a href="#">
+                                        <img src="images/news.jpg" height="70px" width="70px" alt="Новость" class="rounded d-flex mr-3"/>  
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="news-title">
+                                            <a href="#">Просто новость</a>
+                                        </div>
+                                        <div class="news-author">
+                                            <a href="#" class="comment-ind">5 комментариев</a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
+                                <div class="media">
+                                    <a href="#">
+                                        <img src="images/news.jpg" height="70px" width="70px" alt="Новость" class="rounded d-flex mr-3"/>  
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="news-title">
+                                            <a href="#">Уже не новость</a>
+                                        </div>
+                                        <div class="news-author">
+                                            <a href="#" class="comment-ind">9 комментариев</a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
+                                <div class="media">
+                                    <a href="#">
+                                        <img src="images/news.jpg" height="70px" width="70px" alt="Новость" class="rounded d-flex mr-3"/>  
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="news-title">
+                                            <a href="#">Свежая новость</a>
+                                        </div>
+                                        <div class="news-author">
+                                            <a href="#" class="comment-ind">10 комментариев</a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
+                                <div class="media">
+                                    <a href="#">
+                                        <img src="images/news.jpg" height="70px" width="70px" alt="Новость" class="rounded d-flex mr-3"/>  
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="news-title">
+                                            <a href="#">Бесполезная новость</a>
+                                        </div>
+                                        <div class="news-author">
+                                            <a href="#" class="comment-ind">9 комментариев</a>
+                                        </div>
+                                    </div> 
+                                </div>    
+                            </div><!-- /tab-2 -->
+                        </div><!-- /tab panes -->
+                    </div><!-- /tabs -->
+                    <!-- Calendar -->
+                    <div id="my-calendar"></div>
+                </div><!-- /sidebar-->
+                
+                <!-- Content -->
+                <div class="col-xs-12 col-lg-9">
+                    <div class="post">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3  pad-none">
+                                    <a href="#"><img src="images/karate.jpg" alt="Секция по каратэ" class="post-img d-block"/></a>
+                                </div>
+                                <div class="col-xs-12 col-md-9 pad-text-post">
+                                    <div class="post-header">
+                                        <span><a href="#">СПОРТИВНАЯ СЕКЦИЯ ПО КАРАТЭ</a></span>
+                                    </div>
+                                    <div class="post-info">
+                                        <span><i class="fa fa-calendar"></i> Mar.10.2021</span>
+                                        <span><i class="fa fa-user"></i> От <a href="#">Дмитрия Хомельянского</a></span>
+                                        <span><i class="fa fa-file-text-o"></i> В <a href="#">Спорт</a></span>
+                                        <span><i class="fa fa-tags"></i> Теги: <a href="#">Драка</a>, <a href="#">БитьКирпичиРуками</a></span>
+                                    </div>
+                                    <div class="post-text">
+                                        <span>Спортивная секция по каратэ Московского района города Минска проводит набор групп 8-12, 13-17, 18+, для занятий профессиональным каратэ.</span>
+                                    </div>
+                                    <div class="post-read-more">
+                                        <span class="pull-left">Бесплатно</span>
+                                        <a href="#" class="btn-post pull-right">Записаться <i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="post">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3  pad-none">
+                                    <a href="#"><img src="images/kursy_english.jpg" alt="Курсы английского языка" class="post-img d-block"/></a>
+                                </div>
+                                <div class="col-xs-12 col-md-9 pad-text-post">
+                                    <div class="post-header">
+                                        <span><a href="#">КУРСЫ АНГЛИЙСКОГО ОТ ШКОЛЫ MINSKLINGUA</a></span>
+                                    </div>
+                                    <div class="post-info">
+                                        <span><i class="fa fa-calendar"></i> Mar.9.2021</span>
+                                        <span><i class="fa fa-user"></i> От <a href="#">Никиты Ермаковича</a></span>
+                                        <span><i class="fa fa-file-text-o"></i> В <a href="#">Курсы</a></span>
+                                        <span><i class="fa fa-tags"></i> Тэги: <a href="#">учиНиХачу</a>, <a href="#">язык</a></span>
+                                    </div>
+                                    <div class="post-text">
+                                        <span>Языковая школа MinskLingua приглашает людей любых возрастов для прохождения курсов изучения иностранных языков</span>
+                                    </div>
+                                    <div class="post-read-more">
+                                        <span class="pull-left">200 грывень</span>
+                                        <a href="#" class="btn-post pull-right">Записаться <i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="post">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 pad-text-post">
+                                    <div class="post-header">
+                                        <span><a href="#">КУРСЫ МАРЕКТИНГА ОТ МАРКЕТИНОГОВОГО АГЕНСТВА</a></span>
+                                    </div>
+                                    <div class="post-info">
+                                        <span><i class="fa fa-calendar"></i> Mar.8.2021</span>
+                                        <span><i class="fa fa-user"></i> От <a href="#">Артема Новика</a></span>
+                                        <span><i class="fa fa-file-text-o"></i> В <a href="#">Маркетинг</a></span>
+                                        <span><i class="fa fa-tags"></i> Тэги: <a href="#">продажи</a>, <a href="#">маркетологОтБога</a></span>
+                                    </div>
+                                    <div class="post-text">
+                                        <span>Маркетинговое агенство приглашает людей для обучения по профессии "Маркетолог". По окончанию обучения вам будет предоставлен сертификат об освоении данной профессии.</span>
+                                    </div>
+                                    <div class="post-read-more">
+                                        <span class="pull-left">40 грывень</span>
+                                        <a href="#" class="btn-post pull-right">Записаться <i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-my-link" href="#" tabindex="-1"><i class="fa fa-angle-double-left"></i></a>
+                            </li>
+
+                            <li class="page-item disabled">
+                                <a class="page-my-link" href="#" tabindex="-1"><i class="fa fa-angle-left"></i></a>
+                            </li>
+
+                            <li class="page-item active">
+                                <a class="page-my-link" href="#">1</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="page-my-link" href="#">2</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="page-my-link" href="#">3</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="page-my-link" href="#">4</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="page-my-link" href="#">5</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="page-my-link" href="#"><i class="fa fa-angle-right"></i></a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="page-my-link" href="#"><i class="fa fa-angle-double-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav><!-- /pagination -->
+                </div><!-- /content --> 
+            </div> 
+        </div><!-- /container -->
+          
+        <footer id="footer" class="top-space">
+
+           <div class="footer1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6 widget">
+                            <div class="widget-body">
+                                <p class="simplenav">
+                                    <a href="#">На главную</a> | 
+                                    <a href="#">О нас</a> |
+                                    <a href="#">Реклама</a> |
+                                    <a href="#">Сообщить об ошибке</a> |
+                                    <b><a href="#">Выйти</a></b>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 widget">
+                            <div class="widget-body">
+                                <p class="text-right">
+                                    Copyright &copy; 2021, BSUIR. Designed by <a href="#" rel="designer">Dmitry Khamelyanski & Nikita Ermakovich</a> 
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+	    </footer>
+		
+		<!-- JavaScript -->
+		<!-- jQuery, Popper.js, Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-2.0.3.js" integrity="sha256-lCf+LfUffUxr81+W0ZFpcU0LQyuZ3Bj0F2DQNCxTgSI=" crossorigin="anonymous"></script>
+		
+		<!-- Календарик -->
+		<script src="js/calendar.js"></script>
+	</body>    
+</html>
